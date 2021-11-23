@@ -7,71 +7,174 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
+  <meta name="description" content="Time tracking dashboard">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <div class="card-group">
+      <div class="card card-feature">
+        Report for
+        Jeremy Robson
 
-  Report for
-  Jeremy Robson
+        Daily
+        Weekly
+        Monthly
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <div class="card">
+        <div class="card-header bg bg-orange" style="background-image: url('images/icon-work.svg');"></div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Work</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text daily" style="display: none;">
+            <h3>5hrs</h3> <!-- daily -->
+            <p>Previous - 7hrs</p> <!-- daily -->
+          </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+          <div class="card-text weekly">
+            <h3>32hrs</h3> <!-- weekly -->
+            <p>Last Week - 36hrs</p> <!-- weekly -->
+          </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+          <div class="card-text monthly" style="display: none;">
+            <h3>103hrs</h3> <!-- monthly -->
+            <p>Previous - 128hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <div class="card">
+        <div class="card-header bg bg-soft-blue" style="background-image: url('images/icon-play.svg');"></div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Play</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text daily" style="display: none;">
+            <h3>1hr</h3> <!-- daily -->
+            <p>Previous - 2hrs</p> <!-- daily -->
+          </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+          <div class="card-text weekly">
+            <h3>10hrs</h3> <!-- weekly -->
+            <p>Last Week - 8hrs</p> <!-- weekly -->
+          </div>
 
-  
+          <div class="card-text monthly" style="display: none;">
+            <h3>23hrs</h3> <!-- monthly -->
+            <p>Previous - 29hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg bg-light-red" style="background-image: url('images/icon-study.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Study</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text daily" style="display: none;">
+            <h3>0hrs</h3> <!-- daily -->
+            <p>Previous - 1hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text weekly">
+            <h3>4hrs</h3> <!-- weekly -->
+            <p>Last Week - 7hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text monthly" style="display: none;">
+            <h3>13hrs</h3> <!-- monthly -->
+            <p>Previous - 19hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg bg-lime-green" style="background-image: url('images/icon-exercise.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Exercise</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text daily" style="display: none;">
+            <h3>1hrs</h3> <!-- daily -->
+            <p>Previous - 1hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text weekly">
+            <h3>4hrs</h3> <!-- weekly -->
+            <p>Last Week - 5hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text monthly" style="display: none;">
+            <h3>11hrs</h3> <!-- monthly -->
+            <p>Previous - 18hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg bg-violet" style="background-image: url('images/icon-social.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Social</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text daily" style="display: none;">
+            <h3>1hrs</h3> <!-- daily -->
+            <p>Previous - 3hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text weekly">
+            <h3>5hrs</h3> <!-- weekly -->
+            <p>Last Week - 10hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text monthly" style="display: none;">
+            <h3>21hrs</h3> <!-- monthly -->
+            <p>Previous - 23hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg bg-yellow" style="background-image: url('images/icon-self-care.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Self Care</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text daily" style="display: none;">
+            <h3>0hrs</h3> <!-- daily -->
+            <p>Previous - 1hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text weekly">
+            <h3>2hrs</h3> <!-- weekly -->
+            <p>Last Week - 2hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text monthly" style="display: none;">
+            <h3>7hrs</h3> <!-- monthly -->
+            <p>Previous - 11hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
