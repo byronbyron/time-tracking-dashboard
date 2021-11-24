@@ -10,21 +10,21 @@ btnDaily.addEventListener('click', () => {
     hideAll();
     removeActiveClasses();
     btnDaily.classList.add('active');
-    daily.forEach(item => item.style.display = 'block');
+    daily.forEach(item => item.style.display = 'flex');
 });
 
 btnWeekly.addEventListener('click', () => {
     hideAll();
     removeActiveClasses();
     btnWeekly.classList.add('active');
-    weekly.forEach(item => item.style.display = 'block');
+    weekly.forEach(item => item.style.display = 'flex');
 });
 
 btnMonthly.addEventListener('click', () => {
     hideAll();
     removeActiveClasses();
     btnMonthly.classList.add('active');
-    monthly.forEach(item => item.style.display = 'block');
+    monthly.forEach(item => item.style.display = 'flex');
 });
 
 function hideAll() {

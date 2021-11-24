@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .card-body {
-    padding: 1.5rem;
+    padding: 1.75rem 1.5rem;
     border-radius: 1rem;
     background-color: var(--dark-blue);
     position: relative;
@@ -117,8 +117,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .card-body p {
     font-size: 0.9375rem;
-    font-weight: 300;
     margin-bottom: 0.875rem;
+    font-weight: 300;
+    margin-bottom: 0;
     color: var(--pale-blue);
 }
 
@@ -131,7 +132,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
     margin-right: auto;
     color: var(--white);
 }
@@ -255,15 +256,17 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .card-body p {
-        margin-bottom: 0;
+        margin-bottom: 0
     }
 
     .card-text {
-        display: block;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .card-text h3 {
         font-size: 3.4375rem;
+        margin-bottom: 0.75rem;
     }
 
     .feature {
